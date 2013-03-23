@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description" />
+
+    <ImageView
+        android:id="@+id/ivReturnPic"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:src="@android:drawable/alert_dark_frame" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:autoText="False"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="true"
+        android:textStyle="normal"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_long" />
+
+    <EditText
+        android:id="@+id/txtWait"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_trade" />
+
+    <Spinner
+        android:id="@+id/spinTrade"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:id="@+id/ibTakePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add A Photo" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnAddSer_Click"
+        android:text="@string/new_equest" />
+
+    <TextView
+        android:id="@+id/txtServe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num_requests" />
+
+</LinearLayout>
