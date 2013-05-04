@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/responseentry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/res1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="Price:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/tvprice"
+            android:hint="price" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/res2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res1" >
+        <TextView
+            android:id="@+id/tvestimatedtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvprice"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text="Estimated Time:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etestimatedtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etprice"
+            android:layout_toRightOf="@+id/tvestimatedtime"
+            android:hint="time" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/res3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res2" >
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text="Save" />
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_toLeftOf="@+id/savebtn"
+            android:layout_marginRight="5dip"
+            android:text="Cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
